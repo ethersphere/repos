@@ -41,6 +41,9 @@ jobs:
       - name: Prepare gpg
         run: |
           echo "allow-preset-passphrase" > ~/.gnupg/gpg-agent.conf
+          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
+          echo "use-agent" > ~/.gnupg/gpg.conf
+          echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
           gpg-connect-agent reloadagent /bye
           export KEYGRIP=$(gpg2 --with-keygrip -K ${GPG_KEY_ID} | grep -m 1 Keygrip | cut -d'=' -f2 | tr -d '[:space:]')
           /usr/lib/gnupg2/gpg-preset-passphrase --passphrase "${GPG_PASSPHRASE}" --preset ${KEYGRIP}
