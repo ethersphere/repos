@@ -1,0 +1,82 @@
+name: Publish
+
+on:
+  repository_dispatch:
+    types: [ publish-repos ]
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Name of the package'
+        default: 'false'
+      tag:
+        description: 'Tag of the package that is going to be included'
+        default: 'false'
+
+env:
+  PACKAGE: '${{ github.event.client_payload.package }}'
+  TAG: '${{ github.event.client_payload.tag }}'
+
+jobs:
+  publish-repos:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Import GPG key
+        run: |
+          echo "$GPG_PRIVATE_KEY" | gpg --import --passphrase "$GPG_PASSPHRASE" --batch --allow-secret-key-import
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+      - name: Override inputs from `workflow_dispatch`
+      if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          echo "PACKAGE=${{ github.event.inputs.package }}" >> $GITHUB_ENV
+          echo "TAG=${{ github.event.inputs.tag }}" >> $GITHUB_ENV
+      - name: Prepare environment
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install gnupg-agent reprepro rpm createrepo rng-tools
+          mkdir -p deb/conf rpm
+      - name: Prepare gpg
+        run: |
+          echo "allow-preset-passphrase" > ~/.gnupg/gpg-agent.conf
+          gpg-connect-agent reloadagent /bye
+          export KEYGRIP=$(gpg2 --with-keygrip -K ${GPG_KEY_ID} | grep -m 1 Keygrip | cut -d'=' -f2 | tr -d '[:space:]')
+          /usr/lib/gnupg2/gpg-preset-passphrase --passphrase "${GPG_PASSPHRASE}"--preset ${KEYGRIP}
+        env:
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+      - name: Download packages
+        run: |
+          for arch in amd64 arm64 armhf
+          do wget https://github.com/ethersphere/${PACKAGE}/releases/download/${TAG}/${PACKAGE}_${TAG##v}_${arch}.deb -P deb; done
+          for arch in x86_64 aarch64 arm
+          do wget https://github.com/ethersphere/${PACKAGE}/releases/download/${TAG}/${PACKAGE}-${TAG##v}.${arch}.rpm -P rpm/${arch}; done
+      - name: Set GPG_KEY_ID
+        run: |
+          sed "s/{GPG_KEY_ID}/${GPG_KEY_ID}/g" distributions > deb/conf/distributions
+          printf '%s\n' "%_signature gpg" "%_gpg_name ${GPG_KEY_ID}" > /root/.rpmmacros
+        env:
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
+      - name: Add deb packages to the repo
+        run: |
+          for codename in bookworm bullseye buster stretch jessie
+          do reprepro --basedir deb includedeb ${codename} deb/*.deb; done
+          for codename in jammy impish focal bionic xenial trusty
+          do reprepro --basedir deb includedeb ${codename} deb/*.deb; done
+      - name: Add rpm packages to the repo
+        run: |
+          rpm --addsign rpm/*/*.rpm
+          createrepo rpm
+          gpg --detach-sign --armor rpm/repodata/repomd.xml
+      - name: Clean repo
+        run: |
+          rm -rf deb/conf
+          rm deb/*.deb
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "package: ${{ github.event.client_payload.package }} tag: ${{ github.event.client_payload.tag }}"
+          commit_author: bee-worker <bee-worker@ethswarm.org>
+          commit_user_name: bee-worker
+          commit_user_email: bee-worker@ethswarm.org

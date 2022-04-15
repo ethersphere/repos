@@ -1,0 +1,98 @@
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: testing
+Codename: bookworm
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Personal repository
+SignWith: {GPG_KEY_ID}
+
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: stable
+Codename: bullseye
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Personal repository
+SignWith: {GPG_KEY_ID}
+
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: oldstable
+Codename: buster
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Personal repository
+SignWith: {GPG_KEY_ID}
+
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: oldoldstable
+Codename: stretch
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Personal repository
+SignWith: {GPG_KEY_ID}
+
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: archived
+Codename: jessie
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Personal repository
+SignWith: {GPG_KEY_ID}
+
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: stable
+Codename: jammy
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Personal repository
+SignWith: {GPG_KEY_ID}
+
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: stable
+Codename: impish
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Personal repository
+SignWith: {GPG_KEY_ID}
+
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: stable
+Codename: focal
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Personal repository
+SignWith: {GPG_KEY_ID}
+
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: stable
+Codename: bionic
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Personal repository
+SignWith: {GPG_KEY_ID}
+
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: stable
+Codename: xenial
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Personal repository
+SignWith: {GPG_KEY_ID}
+
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: archived
+Codename: trusty
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Personal repository
+SignWith: {GPG_KEY_ID}
