@@ -1,0 +1,6 @@
+Archive: stable
+Component: main
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Architecture: amd64
+Description: Personal repository

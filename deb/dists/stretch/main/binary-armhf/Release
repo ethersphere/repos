@@ -1,0 +1,6 @@
+Archive: oldoldstable
+Component: main
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Architecture: armhf
+Description: Personal repository
