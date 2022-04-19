@@ -36,7 +36,7 @@ jobs:
       - name: Prepare environment
         run: |
           sudo apt-get update
-          sudo apt-get -y install gnupg python3-gpgme gnupg-agent reprepro rpm createrepo rng-tools
+          sudo apt-get -y install gnupg python-gpg gnupg-agent reprepro rpm createrepo rng-tools
           mkdir -p deb/conf rpm
       - name: Prepare gpg
         run: |
