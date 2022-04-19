@@ -1,6 +1,0 @@
-Archive: testing
-Component: main
-Origin: repos.ethswarm.org/deb
-Label: repos.ethswarm.org/deb
-Architecture: arm64
-Description: Personal repository
