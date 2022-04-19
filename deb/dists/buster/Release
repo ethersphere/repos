@@ -1,0 +1,38 @@
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: oldstable
+Codename: buster
+Date: Tue, 19 Apr 2022 16:14:45 UTC
+Architectures: amd64 arm64 armhf
+Components: stable
+Description: Personal repository
+MD5Sum:
+ a4ab1657ad51208d1cc238e5673c62d1 453 stable/binary-amd64/Packages
+ dff306d6a8d8f1004aac4543ac139bc1 344 stable/binary-amd64/Packages.gz
+ 7b8122fc20a8e10dda5304b82b1aeacc 151 stable/binary-amd64/Release
+ b7a2997ab7bccc9a762c3cd6c1b125ff 452 stable/binary-arm64/Packages
+ 03ae074a412a26c68bc74065facb5416 340 stable/binary-arm64/Packages.gz
+ 3a922f0c8d536c4380e8f6a360763228 151 stable/binary-arm64/Release
+ 9c7b60c139820a0de56bd64d95acad24 452 stable/binary-armhf/Packages
+ ea6c32c696e5cb8d924d8fd6468634dc 337 stable/binary-armhf/Packages.gz
+ 136ce2ad489241f226d5d5b0f4de8eb7 151 stable/binary-armhf/Release
+SHA1:
+ 1eeb46821026ca139df59c417d529be25dff8876 453 stable/binary-amd64/Packages
+ 000de9cb07e0c1946ecc6e1d4d7d8da1fa922e21 344 stable/binary-amd64/Packages.gz
+ 6a71fd0fa4ce283aa6d9dbb3b7ada805959b9a82 151 stable/binary-amd64/Release
+ 50249349140db0e7511ea7139a65d79ef345598b 452 stable/binary-arm64/Packages
+ 740df991b3a65695d33bc03d024833c818fbb774 340 stable/binary-arm64/Packages.gz
+ 2a74ba76b41e873200b345bd84e6aea3b9969170 151 stable/binary-arm64/Release
+ 61b30d6a9c065b09998fde89e7d36f441fa543b3 452 stable/binary-armhf/Packages
+ 360243c5c134360b30718e579c2e98d543fa1d05 337 stable/binary-armhf/Packages.gz
+ 381a228140ee9dcf2b4cb31cdc5f09ab8121a4ce 151 stable/binary-armhf/Release
+SHA256:
+ 65e032c8d3978f77c39671874453813ea3d50abcaa8edd197d18f149129dfe07 453 stable/binary-amd64/Packages
+ f6d9971f31a4d87fd91a2a6addc79ae6639b0d033b175c5a36db8e75acbd693e 344 stable/binary-amd64/Packages.gz
+ ac24b2032472e8162aa5d5c417a2904a35aedcea144741cd3bc4b1fc07e3daa3 151 stable/binary-amd64/Release
+ 4d0a327462688d75fae13406a288ef4f79a6d846e8554c20794aeb13fd0181a3 452 stable/binary-arm64/Packages
+ 98baf7df364c5a161f9a82f97dedb6e445245805c9f8c84b465e0aa1e7d04b79 340 stable/binary-arm64/Packages.gz
+ 40085acd1216b0af1af9e629a733fb5241ce59b4adb39488a11152b6fa4c43cc 151 stable/binary-arm64/Release
+ a74c209e098377ed49a5b842043ceb248bdf72f21ffc7a1c0a2fd0cbbd4037c8 452 stable/binary-armhf/Packages
+ a1dd7f4d867436209c329a8c082f0f341ab74021ba6e1faf946e4d7aee4f83a7 337 stable/binary-armhf/Packages.gz
+ 858e182bb391e74af6ef498c9bb3c1596beccea349e79499e5412c0301c215d7 151 stable/binary-armhf/Release

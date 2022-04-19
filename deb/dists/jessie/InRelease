@@ -1,0 +1,57 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Suite: archived
+Codename: jessie
+Date: Tue, 19 Apr 2022 16:14:47 UTC
+Architectures: amd64 arm64 armhf
+Components: stable
+Description: Personal repository
+MD5Sum:
+ a4ab1657ad51208d1cc238e5673c62d1 453 stable/binary-amd64/Packages
+ dff306d6a8d8f1004aac4543ac139bc1 344 stable/binary-amd64/Packages.gz
+ 7de9525b930ff4fd26f04d442334ce3a 150 stable/binary-amd64/Release
+ b7a2997ab7bccc9a762c3cd6c1b125ff 452 stable/binary-arm64/Packages
+ 03ae074a412a26c68bc74065facb5416 340 stable/binary-arm64/Packages.gz
+ 4461ba7b9db2caa69e3df78af8d78782 150 stable/binary-arm64/Release
+ 9c7b60c139820a0de56bd64d95acad24 452 stable/binary-armhf/Packages
+ ea6c32c696e5cb8d924d8fd6468634dc 337 stable/binary-armhf/Packages.gz
+ 399bac4d8a1976929ee25c37fcc5365a 150 stable/binary-armhf/Release
+SHA1:
+ 1eeb46821026ca139df59c417d529be25dff8876 453 stable/binary-amd64/Packages
+ 000de9cb07e0c1946ecc6e1d4d7d8da1fa922e21 344 stable/binary-amd64/Packages.gz
+ e36366a52c00c2b4a315821dc31571310d6264b8 150 stable/binary-amd64/Release
+ 50249349140db0e7511ea7139a65d79ef345598b 452 stable/binary-arm64/Packages
+ 740df991b3a65695d33bc03d024833c818fbb774 340 stable/binary-arm64/Packages.gz
+ 5c0d6271540cb1c45b43c48d6948f9d4e416d9db 150 stable/binary-arm64/Release
+ 61b30d6a9c065b09998fde89e7d36f441fa543b3 452 stable/binary-armhf/Packages
+ 360243c5c134360b30718e579c2e98d543fa1d05 337 stable/binary-armhf/Packages.gz
+ 0fc39fe5e1c79b236de8b199de7c227b184f5024 150 stable/binary-armhf/Release
+SHA256:
+ 65e032c8d3978f77c39671874453813ea3d50abcaa8edd197d18f149129dfe07 453 stable/binary-amd64/Packages
+ f6d9971f31a4d87fd91a2a6addc79ae6639b0d033b175c5a36db8e75acbd693e 344 stable/binary-amd64/Packages.gz
+ 41b422ef27a4f6dca759c0971483edb012328717cf0af95cd185510333861185 150 stable/binary-amd64/Release
+ 4d0a327462688d75fae13406a288ef4f79a6d846e8554c20794aeb13fd0181a3 452 stable/binary-arm64/Packages
+ 98baf7df364c5a161f9a82f97dedb6e445245805c9f8c84b465e0aa1e7d04b79 340 stable/binary-arm64/Packages.gz
+ 7fea4e25f2854425d812bd3c4e3816cefc272a62e9530a05abcb32590de9741c 150 stable/binary-arm64/Release
+ a74c209e098377ed49a5b842043ceb248bdf72f21ffc7a1c0a2fd0cbbd4037c8 452 stable/binary-armhf/Packages
+ a1dd7f4d867436209c329a8c082f0f341ab74021ba6e1faf946e4d7aee4f83a7 337 stable/binary-armhf/Packages.gz
+ 019d6909d466b446bf64cf1fe2b54749f227200d7acb9038381123548dc3c11f 150 stable/binary-armhf/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEjnueN3qgC+sQBhtYyWnNCWvimJEFAmJe3/cACgkQyWnNCWvi
+mJEnoA/7BxqAAzmXGDKExItwmWB4AUMuV1Fg0t/YzRGOdTvyG7lT3yLV9j/RQK/B
+6cOIalPWlX/+2de4lJYZgBCrCLqtOmnQpJK+thftH6DIUzOBXu2mJIxECMvhgt4o
+ZriEaFccLfrLxLrURSEDB3VLHjQoic715Up1NBLhAb5FqVw+YCOF+ChjFiRaJEPY
+roXDuLwQHV4drw22cc57o8XQ/AahapdGE8BZtkopI9kgSEwxj9m4cHxGdSJtUnyd
++S2EUpOhwXaJI2sUUdB4QmhAP/jn6SdbO5ewJ/4OAyQ1DfBgiHbRVHudRG4cC5rZ
+ialo/iKzwAKFsz68QcNTeVwPJ16dyS8xdkmJVcWd9HUq2Ef+/TneD0htsSecnB2f
+TLtNcGBIWdpbbNcrEt4VpVOWADAP/l1PG8n5X+IwRUhYgzlpi1VzvLNkUamo3Abw
+edBsOeiNi7sUmctDkPDznOoA3NlQB6kXwYxezewjOIKGOh7Qwqn7liKhmy2P7swC
+8FL0yU+IK2/f8tGZ/U+7PeG45DFcY+jr4LLdDQC5zpSPbyOxH02hiroysAoqKjpG
+ppgGBU0deG+am9ENRad3CW8EC6vdAvL69SSExwHNEuomi8aTsBBL7eX8A9l8C6Vp
+pIGak/RPBZwGOuOaB7yeJElBwu7CWt5gwYs0h66lnwA5fqJbPBc=
+=9fPA
+-----END PGP SIGNATURE-----

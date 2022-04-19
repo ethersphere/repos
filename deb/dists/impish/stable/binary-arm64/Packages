@@ -1,0 +1,15 @@
+Package: bee-clef
+Version: 0.13.1
+Architecture: arm64
+Maintainer: Swarm Devops <devops@ethswarm.org>
+Installed-Size: 23758
+Homepage: https://swarm.ethereum.org/
+Priority: optional
+Section: 
+Filename: pool/stable/b/bee-clef/bee-clef_0.13.1_arm64.deb
+Size: 9354870
+SHA256: ea205a656fc4560ebbcb25c3af39f916122a1ea60f80c03999fef37efd3546a9
+SHA1: 698e832d632fbfc9c2a84de94dacc4633de31a76
+MD5sum: 7053f1c6e1953b6cc6e002c38241d421
+Description: Ethereum Clef
+
