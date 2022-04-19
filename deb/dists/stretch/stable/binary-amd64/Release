@@ -1,0 +1,6 @@
+Archive: oldoldstable
+Component: stable
+Origin: repos.ethswarm.org/deb
+Label: repos.ethswarm.org/deb
+Architecture: amd64
+Description: Personal repository
