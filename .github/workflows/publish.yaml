@@ -36,7 +36,7 @@ jobs:
       - name: Prepare environment
         run: |
           sudo apt-get update
-          sudo apt-get -y install gnupg python-gpg gnupg-agent reprepro rpm createrepo rng-tools
+          sudo apt-get -y install gnupg-agent reprepro rpm createrepo rng-tools
           mkdir -p deb/conf rpm
       - name: Prepare gpg
         run: |
@@ -45,7 +45,7 @@ jobs:
           echo "use-agent" > ~/.gnupg/gpg.conf
           echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
           gpg-connect-agent reloadagent /bye
-          export KEYGRIP=$(gpg2 --with-keygrip -K ${GPG_KEY_ID} | grep -m 1 Keygrip | cut -d'=' -f2 | tr -d '[:space:]')
+          export KEYGRIP=$(gpg2 --with-keygrip -K ${GPG_KEY_ID} | tac | grep -m 1 Keygrip | cut -d'=' -f2 | tr -d '[:space:]')
           /usr/lib/gnupg2/gpg-preset-passphrase --passphrase "${GPG_PASSPHRASE}" --preset ${KEYGRIP}
         env:
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
