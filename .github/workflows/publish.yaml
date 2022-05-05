@@ -70,9 +70,9 @@ jobs:
           do reprepro --basedir deb includedeb ${codename} deb/*.deb; done
       - name: Add rpm packages to the repo
         run: |
-          rpm --addsign rpm/*/*.rpm
+          rpm --addsign rpm/*/${PACKAGE}-${TAG##v}*.rpm
           createrepo rpm
-          gpg --detach-sign --armor rpm/repodata/repomd.xml
+          gpg --no-tty --detach-sign --armor rpm/repodata/repomd.xml
       - name: Clean repo
         run: |
           rm -rf deb/conf
