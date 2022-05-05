@@ -71,8 +71,8 @@ jobs:
       - name: Add rpm packages to the repo
         run: |
           rpm --addsign rpm/*/${PACKAGE}-${TAG##v}*.rpm
-          createrepo rpm
-          gpg --no-tty --detach-sign --armor rpm/repodata/repomd.xml
+          createrepo --upgrade rpm
+          gpg --detach-sign --armor rpm/repodata/repomd.xml
       - name: Clean repo
         run: |
           rm -rf deb/conf
