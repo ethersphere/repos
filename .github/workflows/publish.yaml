@@ -7,10 +7,10 @@ on:
     inputs:
       package:
         description: 'Name of the package'
-        default: 'false'
+        required: true
       tag:
         description: 'Tag of the package that is going to be included'
-        default: 'false'
+        required: true
 
 env:
   PACKAGE: '${{ github.event.client_payload.package }}'
@@ -19,6 +19,7 @@ env:
 jobs:
   publish-repos:
     runs-on: ubuntu-18.04
+    if: '!contains(github.event.client_payload.tag, "-rc") && !contains(github.event.inputs.tag, "-rc")'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -79,7 +80,7 @@ jobs:
           rm deb/*.deb
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "package: ${{ github.event.client_payload.package }} tag: ${{ github.event.client_payload.tag }}"
+          commit_message: "package: ${{ github.event.client_payload.package }}${{ github.event.inputs.package }} tag: ${{ github.event.client_payload.tag }}${{ github.event.inputs.tag }}"
           commit_author: bee-worker <bee-worker@ethswarm.org>
           commit_user_name: bee-worker
           commit_user_email: bee-worker@ethswarm.org
