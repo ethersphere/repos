@@ -19,7 +19,7 @@ env:
 jobs:
   publish-repos:
     runs-on: ubuntu-18.04
-    if: '!contains(github.event.client_payload.tag, "-rc") && !contains(github.event.inputs.tag, "-rc")'
+    if: "!contains(github.event.client_payload.tag, '-rc') && !contains(github.event.inputs.tag, '-rc')"
     steps:
       - name: Checkout
         uses: actions/checkout@v2
