@@ -1,4 +1,4 @@
-# Swarm DEB and RPM repos hosted on Github Actions
+# Swarm DEB and RPM repos hosted on Github
 
 ## To add repo
 
