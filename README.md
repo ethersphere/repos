@@ -11,7 +11,7 @@ curl -fsSL https://repos.ethswarm.org/public.key | sudo gpg --dearmor -o /usr/sh
 ```
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ethersphere-archive-keyring.gpg] https://repos.ethswarm.org/deb \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/ethswarm.list > /dev/null
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/ethersphere.list > /dev/null
 ```
 
 ### On CentOS/Fedora
