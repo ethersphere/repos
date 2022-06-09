@@ -29,3 +29,17 @@ SHA1: 698e832d632fbfc9c2a84de94dacc4633de31a76
 MD5sum: 7053f1c6e1953b6cc6e002c38241d421
 Description: Ethereum Clef
 
+Package: gateway-proxy
+Version: 0.5.1
+Architecture: all
+Depends: nodejs, sudo
+Maintainer: null
+Priority: optional
+Section: base
+Filename: pool/stable/g/gateway-proxy/gateway-proxy_0.5.1_all.deb
+Size: 22126208
+SHA256: 5f65d67542a0f847d08b9324e343d82f70403202f3983a1f61e69cab0721a968
+SHA1: ae90332630be5207b9a7f36bbc56221c68d745de
+MD5sum: 98a5e903d913cd86ee01f101d04bd2c6
+Description: Swarm proxy server that can play role of a gateway
+
