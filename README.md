@@ -5,12 +5,12 @@
 ### On Debian/Ubuntu
 
 ```
-curl -fsSL https://repos.ethswarm.org/public.key | sudo gpg --dearmor -o /usr/share/keyrings/ethswarm-archive-keyring.gpg
+curl -fsSL https://repos.ethswarm.org/public.key | sudo gpg --dearmor -o /usr/share/keyrings/ethersphere-archive-keyring.gpg
 ```
 
 ```
 echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ethswarm-archive-keyring.gpg] https://repos.ethswarm.org/deb \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ethersphere-archive-keyring.gpg] https://repos.ethswarm.org/deb \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/ethswarm.list > /dev/null
 ```
 
