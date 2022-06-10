@@ -37,9 +37,9 @@ Maintainer: null
 Priority: optional
 Section: base
 Filename: pool/stable/g/gateway-proxy/gateway-proxy_0.5.1_all.deb
-Size: 22126208
-SHA256: 5f65d67542a0f847d08b9324e343d82f70403202f3983a1f61e69cab0721a968
-SHA1: ae90332630be5207b9a7f36bbc56221c68d745de
-MD5sum: 98a5e903d913cd86ee01f101d04bd2c6
+Size: 22098756
+SHA256: 7024768bbac7e9a3ed5d98eaca67086a6be34062921b80887c28923704a7b745
+SHA1: 49bda122eb889ffd059f3dfd50eefe5d989701fd
+MD5sum: c0237b753488f7ae7da29bb5e350700c
 Description: Swarm proxy server that can play role of a gateway
 
