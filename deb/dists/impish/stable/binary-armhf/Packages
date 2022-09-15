@@ -1,5 +1,5 @@
 Package: bee
-Version: 1.8.0
+Version: 1.8.1
 Architecture: armhf
 Maintainer: Swarm Devops <devops@ethswarm.org>
 Installed-Size: 39047
@@ -7,11 +7,11 @@ Depends: passwd, ca-certificates
 Homepage: https://www.ethswarm.org
 Priority: optional
 Section: 
-Filename: pool/stable/b/bee/bee_1.8.0_armhf.deb
-Size: 23147186
-SHA256: 7bc411a6fecf149399db02a0181be255883b75a51208458bc868ad7b023e8f39
-SHA1: ebcb8be55fb7644770755882da17356a1ecfc346
-MD5sum: 11056a87e67a617647245812834d907f
+Filename: pool/stable/b/bee/bee_1.8.1_armhf.deb
+Size: 23124972
+SHA256: 97bd1e50632ec6b77f9fe8703b9ce2279b55003ebd87c7f99e1be227ca5cf57a
+SHA1: b4eb1024872055d412171fd9fb056e4e6e7d43e9
+MD5sum: c3c2919641ecfea6d874ee7d7db35329
 Description: Ethereum Swarm node
 
 Package: bee-clef
