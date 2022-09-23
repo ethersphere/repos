@@ -1,17 +1,17 @@
 Package: bee
-Version: 1.8.1
+Version: 1.8.2
 Architecture: amd64
 Maintainer: Swarm Devops <devops@ethswarm.org>
-Installed-Size: 44995
+Installed-Size: 44999
 Depends: passwd, ca-certificates
 Homepage: https://www.ethswarm.org
 Priority: optional
 Section: 
-Filename: pool/stable/b/bee/bee_1.8.1_amd64.deb
-Size: 25407004
-SHA256: 83b72ca1d3876257121a232e4246c1349d984996c19dace0f52b8b4d0eb6d36e
-SHA1: 42a1eb0116eaeb11fb956f26db4420c1aa095e07
-MD5sum: c90035fcb26d165cdfe327f19f8facf9
+Filename: pool/stable/b/bee/bee_1.8.2_amd64.deb
+Size: 25437834
+SHA256: 1d9686cd558294b28a460493aaefae2df2150a935c1c36dc91b0da6abb1df731
+SHA1: ba38d9db24f82851c1c68d828d0992c4a40c6c1f
+MD5sum: fc060c837c0ce543c828c4c5fbc21904
 Description: Ethereum Swarm node
 
 Package: bee-clef
