@@ -1,17 +1,17 @@
 Package: bee
-Version: 1.10.0
+Version: 1.11.0
 Architecture: arm64
 Maintainer: Swarm Devops <devops@ethswarm.org>
-Installed-Size: 43927
+Installed-Size: 43930
 Depends: passwd, ca-certificates
 Homepage: https://www.ethswarm.org
 Priority: optional
 Section: 
-Filename: pool/stable/b/bee/bee_1.10.0_arm64.deb
-Size: 23609704
-SHA256: 3adfecf51fdcdc7148579c518a8c3062ec5e7aeafa843a003f81863b297037ae
-SHA1: 8edeff21157d64ce432bae88901b6a742ba21b0b
-MD5sum: ce79b6a337894029fecd03e02cc4bb13
+Filename: pool/stable/b/bee/bee_1.11.0_arm64.deb
+Size: 23641592
+SHA256: fdd97f8dfb9c55b27427db83e6f6665fb0797db7ef909a9df27a17f24a49eda9
+SHA1: 37d5f52c6e1ea324bed76bb09fbdda624b42a403
+MD5sum: 9b2240555f65c8f686c2c4f5d2a327c9
 Description: Ethereum Swarm node
 
 Package: bee-clef
