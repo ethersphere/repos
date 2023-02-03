@@ -15,18 +15,18 @@ MD5sum: e923265c6121a5ddd0f30802bfecf989
 Description: Ethereum Swarm node
 
 Package: bee-clef
-Version: 0.14.0
+Version: 0.14.1
 Architecture: armhf
 Maintainer: Swarm Devops <devops@ethswarm.org>
 Installed-Size: 29636
 Homepage: https://swarm.ethereum.org/
 Priority: optional
 Section: 
-Filename: pool/stable/b/bee-clef/bee-clef_0.14.0_armhf.deb
+Filename: pool/stable/b/bee-clef/bee-clef_0.14.1_armhf.deb
 Size: 11785562
-SHA256: 231a3c2d9d200bb2e2c1a74398964f7c247d29484d359fdfe081dbd33b41aff3
-SHA1: 0fa59829b0c855afce2041dac67109b7cf63680e
-MD5sum: c896ddef173be3903da4dba580b26737
+SHA256: 3ac5a93a8d092cf6bea6048173e37d53a4fa981d5e198c9350fe6dd736ef2b03
+SHA1: 04530a5c03e54fc5c868226dc345dd7e58eb464d
+MD5sum: 6bd9377a8527ad75d7dffe37945caf42
 Description: Ethereum Clef
 
 Package: gateway-proxy
